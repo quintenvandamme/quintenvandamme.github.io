@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="fonts/fpro.css" />
     <title>Home</title>
+    <meta name=”description”
+    content="Website of Quinten Van Damme." />
+    <meta name="keywords"
+    content="quinten, quintenvandamme, Quinten Van Damme, hexa, hexa-one, trident, belgium" />
 </head>
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("header").style.top = "0";
+      } else {
+        document.getElementById("header").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script>
 <body>
-    <h1 style="font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;">Test 😺</h1>
+    <div id="header">
+        <div align="center">
+            <nobr>
+                <div align="left" id="logo">Quinten Van Damme</div>
+                <a href="https://quintenvandamme.github.io">Home</a>
+                <a>About</a>
+            </nobr>
+        </div>
+    </div>
+    <div style="margin-top: 90px;"><div id="home-layout"><div><h2 align="center">Welcome!</h1></div></div></div>
 </body>
 </html>

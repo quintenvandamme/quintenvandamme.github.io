@@ -1,0 +1,54 @@
+#header {
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    background: #ffffff;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.329);
+    transition: 0.3s;
+}
+
+#header a {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+#header a:hover {
+    background: rgba(52, 55, 231, 0.288);
+    border-radius: 0.5em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#home-layout {
+    margin: auto;
+    width: 97%;
+    height: 5em;
+    padding: 5px;
+    background: #0000000d;
+    border-radius: 5px;
+}
+
+
+#home-layout h2 {
+    position: relative;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding-top: 5px;
+    color: #000;
+}
+
+#logo {
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    padding-left: 50px;
+    position: absolute;
+}
