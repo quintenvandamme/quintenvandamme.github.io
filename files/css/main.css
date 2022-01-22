@@ -34,15 +34,70 @@
     width: 97%;
     height: 5em;
     padding: 5px;
-    background: #0000000d;
-    border-radius: 5px;
+    border-radius: ;
+    border-bottom: 1px solid;
 }
 
+#home-layout-1 {
+    margin: auto;
+    width: 15%;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+#home-layout-2 {
+    margin: auto;
+    width: 15%;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+}
 
 #home-layout h2 {
     position: relative;
     font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     padding-top: 5px;
+    color: #000;
+}
+
+#home-layout-1 h2 {
+    position: relative;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding-top: 5px;
+    color: #000;
+}
+
+#home-layout-1 p {
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    color: #000;
+}
+
+#home-layout-2 h2 {
+    position: relative;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding-top: 5px;
+    color: #000;
+}
+
+#home-layout-2 p {
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    color: #000;
+}
+
+#home-layout-download-button {
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    background: rgba(52, 55, 231, 0.288);
+    border-radius: 0.5em;
+    cursor: pointer;
+    padding: 4px;
+    text-decoration: none;
     color: #000;
 }
 
