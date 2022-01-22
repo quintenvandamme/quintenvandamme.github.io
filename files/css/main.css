@@ -93,12 +93,15 @@
 
 #home-layout-download-button {
     font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
-    background: rgba(52, 55, 231, 0.288);
     border-radius: 0.5em;
     cursor: pointer;
     padding: 4px;
     text-decoration: none;
     color: #000;
+}
+
+#home-layout-download-button:hover {
+    background: rgba(52, 55, 231, 0.288);
 }
 
 #logo {
