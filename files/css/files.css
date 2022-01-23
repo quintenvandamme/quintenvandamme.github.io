@@ -1,0 +1,48 @@
+#home-layout h3 {
+    position: relative;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding-top: 5px;
+    color: #000;
+}
+
+#files-layout-header {
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin: auto;
+    width: 97%;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #00000014;
+}
+
+#files-layout-content {
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin: auto;
+    width: 97%;
+    padding: 5px;    
+    padding-left: 15px;
+    display: flex;
+    border-right: 1px solid #00000014;
+    border-left: 1px solid #00000014;
+    border-bottom: 1px solid #00000014;
+    border-radius: 0 0 5px 5px;
+}
+
+#files-layout-content h3 {
+    width: 95%;
+}
+
+#download-files {
+    padding-top: 1.3em;
+}
+
+#download-files a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#download-files a:hover {
+    background: rgba(52, 55, 231, 0.288);
+}
