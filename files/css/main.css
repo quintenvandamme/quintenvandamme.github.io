@@ -63,6 +63,31 @@
     color: #000;
 }
 
+#home-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    #home-container {
+        flex-direction: column;
+    }  
+    
+    #home-layout-1 {
+        width: 80% !important;
+        margin-bottom: 30px;
+    }
+    
+    #home-layout-2 {
+        width: 80% !important;
+        margin-bottom: 30px;
+    }
+
+    #logo {
+        display: none !important;
+    }
+}
+
 #home-layout-1 h2 {
     position: relative;
     font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
