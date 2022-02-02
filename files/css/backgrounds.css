@@ -1,0 +1,81 @@
+#background-img {
+    background-size: cover !important;
+    border-radius: 0.3em;
+    margin: 10px;
+    width: 320px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#background-img-buttons {
+    height: 20%;
+    display: flex;
+}
+
+#background-img-effect {
+    border-radius: 0.3em 0.3em 0 0;
+    height: 100%;
+}
+
+#background-img:hover #background-img-buttons {
+    background: rgba(255, 255, 255, 0.329);
+}
+
+#background-img:hover #background-img-effect {
+    background: rgba(255, 255, 255, 0.329);
+}
+
+
+#background-img-buttons-spacer {
+    width: 55%;
+    height: 100%;
+    display: none;
+}
+
+#background-img-buttons-svg {
+    height: 80%;
+    background: rgb(124, 124, 253);
+    margin-right: 5%;
+    border-radius: 0.5em;
+    display: none;
+    cursor: pointer;
+}
+#background-img-buttons-svg p {
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 5px;
+    color: #000;
+    display: inline;
+    text-decoration: none!important;
+}
+
+#background-img-buttons-png {
+    height: 80%;
+    background: rgb(124, 124, 253);
+    border-radius: 0.5em;
+    display: none;
+    cursor: pointer;
+}
+
+#background-img-buttons-png p {
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 5px;
+    color: #000;
+    display: inline;
+    text-decoration: none!important;
+}
+
+#background-img:hover #background-img-buttons-spacer {
+    display: block;
+}
+
+#background-img:hover #background-img-buttons-svg {
+    display: flex;
+}
+
+#background-img:hover #background-img-buttons-png {
+    display: flex;
+}
