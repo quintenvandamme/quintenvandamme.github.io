@@ -13,6 +13,11 @@
    src: url(fonts/NType82-Regular.otf);
 }
 
+@font-face {
+   font-family: LetteraMonoLL-Regular;
+   src: url(fonts/LetteraMonoLL-Regular.otf);
+}
+
 * {
    font-family: NType82Mono-Regular;
 }
@@ -36,11 +41,35 @@ body {
 	font-size: 3rem;
 }
 
-a 
+a:not(.button) 
 {
 	text-decoration: none;
 	border-bottom-style: dotted;
 	border-width: 2px;
 	border-color: #002F6C;
 	color: #002F6C;
+}
+
+.button {
+	text-decoration: none;
+	font-family: LetteraMonoLL-Regular;
+    letter-spacing: -0.7px;
+    border-radius: 50rem;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    color: #fff;
+    background-color: #002F6C;
+    border-color: #002F6C;
+	cursor: pointer;
+    padding: 0.75rem 1.25rem;
+	text-transform: uppercase;
+	transition: all .15s ease-out;
+}
+
+.button:hover {
+	transition: all .15s ease-out;
+    width: 110px;
+    left: 0;
 }
