@@ -1,0 +1,46 @@
+@font-face {
+   font-family: Ndot-55;
+   src: url(fonts/Ndot-55.otf);
+}
+
+@font-face {
+   font-family: NType82Mono-Regular;
+   src: url(fonts/NType82Mono-Regular.otf);
+}
+
+@font-face {
+   font-family: NType82-Regular;
+   src: url(fonts/NType82-Regular.otf);
+}
+
+* {
+   font-family: NType82Mono-Regular;
+}
+
+h1 {
+   font-family: Ndot-55;
+}
+
+table, th, td {
+  border-style: dotted;
+  border-width: 2px;
+  border-color: #000;  
+  border-collapse: collapse;
+}
+
+body {
+	padding: 3rem;
+}
+
+.title {
+	font-size: 3rem;
+}
+
+a 
+{
+	text-decoration: none;
+	border-bottom-style: dotted;
+	border-width: 2px;
+	border-color: #002F6C;
+	color: #002F6C;
+}
