@@ -1,0 +1,40 @@
+#heatmap {
+    width: 100vw;
+    height: 80px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(180, 0fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 0px;
+    overflow-y: clip;
+}
+
+#heatmap div {
+    aspect-ratio: 1/1;
+    height: 20px;
+}
+    
+header #logo {
+	font-family: "Micro 5", sans-serif;
+	font-size: 3rem;
+    position: fixed;
+	margin: 0;
+    left: 3rem;
+    top: calc(40px - 1.5rem);
+    z-index: 4;
+    color: #fff;
+}
+
+.blue {
+      --r: 3;
+      --g: 5;
+      --b: 72;
+
+      background: rgb(
+        calc(255 - ((255 - var(--r)) * var(--intensity))),
+        calc(255 - ((255 - var(--g)) * var(--intensity))),
+        calc(255 - ((255 - var(--b)) * var(--intensity)))
+      );
+}

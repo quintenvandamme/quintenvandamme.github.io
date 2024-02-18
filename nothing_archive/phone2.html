@@ -2,8 +2,8 @@
 <html>
 <head>
 <title>Phone (2) Firmware Archive</title>
-<link rel="stylesheet" href="nothing.css">
-<script src="nothing.js"></script>
+<link rel="stylesheet" href="../css/nothing.css">
+<script src="../js/nothing.js"></script>
 <script>
 loadJSONAndPopulateTable('https://archive.org/metadata/nothing-phone-2-firmware/files');
 </script>
@@ -11,12 +11,15 @@ loadJSONAndPopulateTable('https://archive.org/metadata/nothing-phone-2-firmware/
 </head>
 <body>
 
-<h1 class="title">Phone (2) Firmware Archive</h1>
-
-<div>
-Made by <b>Quinten Van Damme</b>.
-</div>
-
+<h1 class="title">Phone (2) Firmware Archive</h1><p>by <b>Quinten Van Damme</b></p>
+<div class='tabs'>
+  <input type="radio" name="tab" id="tab1" role="tab" checked>
+  <label for="tab1" id="tab1-label">OTA
+  <svg class="float-center bottom-0" width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.0854492 4C0.0854492 2.1142 1.6142 0.585449 3.5 0.585449C5.38581 0.585449 6.91455 2.1142 6.91455 4" fill="#C8102E"></path>
+            </svg>
+  </label>
+  <section aria-labelledby="tab1-label">
 <div style="display:flex;flex-direction: row;gap: 6rem;">
 <div>
 <h1>Android 14</h1>
@@ -161,7 +164,7 @@ Made by <b>Quinten Van Damme</b>.
 </div>
 <div>
 <h1>Checksums</h1>
-			<table id="checksumsTable" cellpadding="4" cellspacing="1" style="width:839px;">
+			<table id="OTAchecksumsTable" cellpadding="4" cellspacing="1" style="width:839px;">
 	<thead>
 		<tr>
 			<td>File Name</td>
@@ -174,7 +177,131 @@ Made by <b>Quinten Van Damme</b>.
 <a style="margin-top: 2rem;" class="button" href="https://archive.org/download/nothing-phone-2-firmware/nothing-phone-2-firmware_archive.torrent">torrent↓</a>
 </div>
 </div>
+  </section>
+  
+  <input type="radio" name="tab" id="tab2" role="tab">
+  <label for="tab2" id="tab2-label">Boot
+  <svg class="float-center bottom-0" width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.0854492 4C0.0854492 2.1142 1.6142 0.585449 3.5 0.585449C5.38581 0.585449 6.91455 2.1142 6.91455 4" fill="#C8102E"></path>
+            </svg>
+  </label>
+  <section aria-labelledby="tab2-label">
+<div style="display:flex;flex-direction: row;gap: 6rem;">
+<div>
+<h1>Boot Files</h1>
+			<table cellpadding="4" cellspacing="1" style="width:839px;">
+	<tbody>
+		<tr>
+			<td style="width:219px;">Version</td>
+			<td>Boot file (Stock)</td>
+			<td>Boot file (Magisk Patched)</td>
+		</tr>
+		<tr>
+			<td>2.5.2</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.5.2/2.5.2_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.5.2/Magisk-Patched_2.5.2_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>2.5.1A</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.5.1A/2.5.1a_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.5.1A/Magisk-Patched_2.5.1a_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>2.5.1</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.5.1/2.5.1_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.5.1/Magisk-Patched_2.5.1_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>2.0.4</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.0.4/2.0.4_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.0.4/Magisk-Patched_2.0.4_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>2.0.3</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.0.3/2.0.3_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.0.3/Magisk-Patched_2.0.3_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>2.0.2A</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.0.2A/2.0.2a_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.0.2A/Magisk-Patched_2.0.2a_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>2.0.2</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.0.2/2.0.2_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-2-firmware/2.0.2/Magisk-Patched_2.0.2_Boot.img" rel="nofollow">All regions</a></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<div>
+<h1>Checksums</h1>
+			<table id="BOOTchecksumsTable" cellpadding="4" cellspacing="1" style="width:839px;">
+	<thead>
+		<tr>
+			<td>File Name</td>
+			<td style="width:219px;">SHA1</td>
+			<td style="width:219px;">Size</td>
+		</tr>
+	</thead>
+	<tbody></tbody>
+</table>
+<a style="margin-top: 2rem;" class="button" href="https://archive.org/download/nothing-phone-2-firmware/nothing-phone-2-firmware_archive.torrent">torrent↓</a>
+</div>
+</div>
+  </section>
+  <!--
 
+  <input type="radio" name="tab" id="tab3" role="tab">
+  <label for="tab3" id="tab3-label">Fastboot
+  <svg class="float-center bottom-0" width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.0854492 4C0.0854492 2.1142 1.6142 0.585449 3.5 0.585449C5.38581 0.585449 6.91455 2.1142 6.91455 4" fill="#C8102E"></path>
+            </svg>
+  </label>
+  <section aria-labelledby="tab3-label">
+  
+  </section>
+  -->
+
+  <input type="radio" name="tab" id="tab4" role="tab">
+  <label for="tab4">APK
+  <svg class="float-center bottom-0" width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.0854492 4C0.0854492 2.1142 1.6142 0.585449 3.5 0.585449C5.38581 0.585449 6.91455 2.1142 6.91455 4" fill="#C8102E"></path>
+            </svg>
+  </label>
+  <section>
+	<p><a href="https://web.archive.org/web/20231012142231/https://cdn.shopify.com/s/files/1/0376/5420/0459/files/NOS_Beta_Tool.apk?v=1697012536" rel="nofollow">NOS_Beta_Tool.apk</a></p>
+  </section>
+  
+</div>
 </body>
 </html>
 

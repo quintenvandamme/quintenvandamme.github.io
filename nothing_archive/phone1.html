@@ -2,8 +2,8 @@
 <html>
 <head>
 <title>Phone (1) Firmware Archive</title>
-<link rel="stylesheet" href="nothing.css">
-<script src="nothing.js"></script>
+<link rel="stylesheet" href="../css/nothing.css">
+<script src="../js/nothing.js"></script>
 <script>
 loadJSONAndPopulateTable('https://archive.org/metadata/nothing-phone-1-firmware/files');
 </script>
@@ -11,12 +11,15 @@ loadJSONAndPopulateTable('https://archive.org/metadata/nothing-phone-1-firmware/
 </head>
 <body>
 
-<h1 class="title">Phone (1) Firmware Archive</h1>
-
-<div>
-Made by <b>Quinten Van Damme</b>.
-</div>
-
+<h1 class="title">Phone (1) Firmware Archive</h1><p>by <b>Quinten Van Damme</b></p>
+<div class='tabs'>
+  <input type="radio" name="tab" id="tab1" role="tab" checked>
+  <label for="tab1" id="tab1-label">OTA
+  <svg class="float-center bottom-0" width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.0854492 4C0.0854492 2.1142 1.6142 0.585449 3.5 0.585449C5.38581 0.585449 6.91455 2.1142 6.91455 4" fill="#C8102E"></path>
+            </svg>
+  </label>
+  <section aria-labelledby="tab1-label">
 <div style="display:flex;flex-direction: row;gap: 6rem;">
 <div>
 <h1>Android 14</h1>
@@ -428,7 +431,7 @@ Made by <b>Quinten Van Damme</b>.
 </div>
 <div>
 <h1>Checksums</h1>
-			<table id="checksumsTable" cellpadding="4" cellspacing="1" style="width:839px;">
+			<table id="OTAchecksumsTable" cellpadding="4" cellspacing="1" style="width:839px;">
 	<thead>
 		<tr>
 			<td>File Name</td>
@@ -440,6 +443,282 @@ Made by <b>Quinten Van Damme</b>.
 </table>
 <a style="margin-top: 2rem;" class="button" href="https://archive.org/download/nothing-phone-1-firmware/nothing-phone-1-firmware_archive.torrent">torrent↓</a>
 </div>
+</div>
+  </section>
+  
+  <input type="radio" name="tab" id="tab2" role="tab">
+  <label for="tab2" id="tab2-label">Boot
+  <svg class="float-center bottom-0" width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.0854492 4C0.0854492 2.1142 1.6142 0.585449 3.5 0.585449C5.38581 0.585449 6.91455 2.1142 6.91455 4" fill="#C8102E"></path>
+            </svg>
+  </label>
+  <section aria-labelledby="tab2-label">
+<div style="display:flex;flex-direction: row;gap: 6rem;">
+<div>
+<h1>Boot Files</h1>
+			<table cellpadding="4" cellspacing="1" style="width:839px;">
+	<tbody>
+		<tr>
+			<td style="width:219px;">Version</td>
+			<td>Boot file (Stock)</td>
+			<td>Boot file (Magisk Patched)</td>
+		</tr>
+		<tr>
+			<td>2.5.2 hotfix</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.5.2%20hotfix/2.5.2.HOTFIX_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.5.2%20hotfix/Magisk-Patched_2.5.2.HOTFIX_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>2.5.2</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.5.2/2.5.2_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.5.2/Magisk-Patched_2.5.2_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>2.5.1 open beta2</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.5.1/open%20beta2/2.5.1.OB2_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.5.1/open%20beta2/Magisk-Patched_2.5.1.OB2_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>2.5.1 open beta1</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.5.1/open%20beta1/2.5.1.OB1_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.5.1/open%20beta1/Magisk-Patched_2.5.1.OB1_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>2.0.5</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.0.5/2.0.5_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.0.5/Magisk-Patched_2.0.5_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>2.0.4</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.0.4/2.0.4_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.0.4/Magisk-Patched_2.0.4_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>2.0.2 hotfix</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.0.2%20hotfix/2.0.2.HOTFIX_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.0.2%20hotfix/Magisk-Patched_2.0.2.HOTFIX_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>2.0.2</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.0.2/2.0.2_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/2.0.2/Magisk-Patched_2.0.2_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.5.6</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.6/1.5.6_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.6/Magisk-Patched_1.5.6_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.5.5</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.5/1.5.5_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.5/Magisk-Patched_1.5.5_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.5.4</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.4/1.5.4_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.4/Magisk-Patched_1.5.4_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.5.3 hotfix</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.3%20hotfix/1.5.3.HOTFIX_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.3%20hotfix/Magisk-Patched_1.5.3.HOTFIX_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.5.3</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.3/1.5.3_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.3/Magisk-Patched_1.5.3_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.5.2</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.2/1.5.2_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.2/Magisk-Patched_1.5.2_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.5.1 hotfix</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.1%20hotfix/1.5.1.OB2.HOTFIX_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.1%20hotfix/Magisk-Patched_1.5.1.OB2.HOTFIX_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.5.1 open beta 2</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.1/1.5.1.OB2_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.1/Magisk-Patched_1.5.1.OB2_Boot.img" rel="nofollow">GLOBAL/EEA</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.5.1 open beta 1</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.1/1.5.1.OB1_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.5.1/Magisk-Patched_1.5.1.OB1_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.1.7</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.1.7/GLOBAL/1.1.7_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.1.7/GLOBAL/Magisk-Patched_1.1.7_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.1.6</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.1.6/GLOBAL/1.1.6_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.1.6/GLOBAL/Magisk-Patched_1.1.6_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.1.5</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.1.5/GLOBAL/1.1.5_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.1.5/GLOBAL/Magisk-Patched_1.1.5_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.1.4</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.1.4/GLOBAL/1.1.4_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.1.4/GLOBAL/Magisk-Patched_1.1.4_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.1.3</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.1.3/GLOBAL/1.1.3_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.1.3/GLOBAL/Magisk-Patched_1.1.3_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.1.2</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.1.2/GLOBAL/1.1.2_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td>1.1.0</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.1.0/GLOBAL/1.1.0_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+			<td style="width:219px;">
+			<p><a href="https://archive.org/download/nothing-phone-1-firmware/1.1.0/GLOBAL/Magisk-Patched_1.1.0_GLOBAL_Boot.img" rel="nofollow">GLOBAL</a></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<div>
+<h1>Checksums</h1>
+			<table id="BOOTchecksumsTable" cellpadding="4" cellspacing="1" style="width:839px;">
+	<thead>
+		<tr>
+			<td>File Name</td>
+			<td style="width:219px;">SHA1</td>
+			<td style="width:219px;">Size</td>
+		</tr>
+	</thead>
+	<tbody></tbody>
+</table>
+<a style="margin-top: 2rem;" class="button" href="https://archive.org/download/nothing-phone-1-firmware/nothing-phone-1-firmware_archive.torrent">torrent↓</a>
+</div>
+</div>
+  </section>
+  
+  <!--
+
+  <input type="radio" name="tab" id="tab3" role="tab">
+  <label for="tab3" id="tab3-label">Fastboot
+  <svg class="float-center bottom-0" width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.0854492 4C0.0854492 2.1142 1.6142 0.585449 3.5 0.585449C5.38581 0.585449 6.91455 2.1142 6.91455 4" fill="#C8102E"></path>
+            </svg>
+  </label>
+  <section aria-labelledby="tab3-label">
+  
+  </section>
+  -->
+  
+  <input type="radio" name="tab" id="tab4" role="tab">
+  <label for="tab4">APK
+  <svg class="float-center bottom-0" width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.0854492 4C0.0854492 2.1142 1.6142 0.585449 3.5 0.585449C5.38581 0.585449 6.91455 2.1142 6.91455 4" fill="#C8102E"></path>
+            </svg>
+  </label>
+  <section>
+	<p><a href="https://web.archive.org/web/20231220090757/https://cdn.shopify.com/s/files/1/0376/5420/0459/files/NothingOfflineOtaUpdate-nothing-release_signed.apk?v=1702994092" rel="nofollow">NothingOfflineOtaUpdate-nothing-release_signed.apk</a></p>
+  </section>
+  
 </div>
 
 </body>
