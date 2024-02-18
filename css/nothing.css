@@ -145,3 +145,17 @@ a:not(.button)
 body {
   padding: 2em;
 }
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff; 
+  border-style: dotted;
+  border-width: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0,0,0,0.1); 
+}
