@@ -278,8 +278,6 @@ loadJSONAndPopulateTable('https://archive.org/metadata/nothing-phone-2-firmware/
 </div>
 </div>
   </section>
-  <!--
-
   <input type="radio" name="tab" id="tab3" role="tab">
   <label for="tab3" id="tab3-label">Fastboot
   <svg class="float-center bottom-0" width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -287,9 +285,34 @@ loadJSONAndPopulateTable('https://archive.org/metadata/nothing-phone-2-firmware/
             </svg>
   </label>
   <section aria-labelledby="tab3-label">
-  
+<div style="display:flex;flex-direction: row;gap: 6rem;">
+<div>
+<h1>Fastboot Files</h1>
+			<table cellpadding="4" cellspacing="1" style="width:839px;">
+	<tbody>
+		<tr>
+			<td style="width:219px;">Version</td>
+			<td>Fastboot file</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<div>
+<h1>Checksums</h1>
+			<table id="FASTBOOTchecksumsTable" cellpadding="4" cellspacing="1" style="width:839px;">
+	<thead>
+		<tr>
+			<td>File Name</td>
+			<td style="width:219px;">SHA1</td>
+			<td style="width:219px;">Size</td>
+		</tr>
+	</thead>
+	<tbody></tbody>
+</table>
+<a style="margin-top: 2rem;" class="button" href="https://archive.org/download/nothing-phone-2-firmware/nothing-phone-2-firmware_archive.torrent">torrent↓</a>
+</div>
+</div>
   </section>
-  -->
 
   <input type="radio" name="tab" id="tab4" role="tab">
   <label for="tab4">APK
@@ -300,7 +323,18 @@ loadJSONAndPopulateTable('https://archive.org/metadata/nothing-phone-2-firmware/
   <section>
 	<p><a href="https://web.archive.org/web/20231012142231/https://cdn.shopify.com/s/files/1/0376/5420/0459/files/NOS_Beta_Tool.apk?v=1697012536" rel="nofollow">NOS_Beta_Tool.apk</a></p>
   </section>
-  
+  <input type="radio" name="tab" id="tab5" role="tab">
+  <label for="tab5">Credits
+  <svg class="float-center bottom-0" width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.0854492 4C0.0854492 2.1142 1.6142 0.585449 3.5 0.585449C5.38581 0.585449 6.91455 2.1142 6.91455 4" fill="#C8102E"></path>
+            </svg>
+  </label>
+  <section>
+  <p>This project is made possible thanks to the following people and sources: </p>
+  <p><a href="https://xdaforums.com/t/nothing-phone-2-official-ota-zip-full-incremental.4604803/" rel="nofollow">Nothing Phone (2) | Official OTA ZIP | Full & Incremental on XDA</a></p>
+  <p><a href="https://xdaforums.com/m/12654443/" rel="nofollow">Sριкє</a>: maintainer of <a href="https://github.com/spike0en/Pong_Archive" rel="nofollow">Pong archive on github</a> and <a href="https://t.me/NothingPhone2" rel="nofollow">phone 2 community on telegram</a></p>
+  <p><a href="https://reindex-ot.github.io/" rel="nofollow">https://reindex-ot.github.io/</a></p>
+  </section>
 </div>
 </body>
 </html>

@@ -12,8 +12,11 @@ function loadJSONAndPopulateTable(jsonPath) {
 function parseJSONAndPopulateTable(json) {
 	var otaTable = document.querySelector('#OTAchecksumsTable tbody');
 	var bootTable = document.querySelector('#BOOTchecksumsTable tbody');
+	var fastbootTable = document.querySelector('#FASTBOOTchecksumsTable tbody');
+
 	otaTable.innerHTML = '';
 	bootTable.innerHTML = '';
+	fastbootTable.innerHTML = '';
 
     var files = json.result;
 
@@ -45,6 +48,23 @@ function parseJSONAndPopulateTable(json) {
 			var sha1 = files[i].sha1;
 
 			var newRow = bootTable.insertRow(bootTable.rows.length);
+			var cell1 = newRow.insertCell(0);
+			var cell2 = newRow.insertCell(1);
+			var cell3 = newRow.insertCell(2);
+
+			var sizeMB = convertBytesToMB(size);
+			var sizeGB = convertBytesToGB(size);
+
+			cell1.innerHTML = name;
+			cell2.innerHTML = sha1;
+			cell3.innerHTML = sizeMB.toFixed(2) + ' MB';
+		}
+
+		if (name.endsWith('.rar') || name.endsWith('.7z')) {
+			var size = parseInt(files[i].size);
+			var sha1 = files[i].sha1;
+
+			var newRow = fastbootTable.insertRow(fastbootTable.rows.length);
 			var cell1 = newRow.insertCell(0);
 			var cell2 = newRow.insertCell(1);
 			var cell3 = newRow.insertCell(2);

@@ -135,12 +135,11 @@ a:not(.button)
 } 
 
 
-.tabs section {
+.tabs section  {
   padding: 1em;
   padding-left: 3rem;
   border-top: 1px solid #b1b3b3;
 }
-
 
 body {
   padding: 2em;
