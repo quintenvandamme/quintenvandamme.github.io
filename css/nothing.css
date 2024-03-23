@@ -18,8 +18,31 @@
    src: url(../fonts/LetteraMonoLL-Regular.otf);
 }
 
+:root {
+	--bg: #ffffff;
+	--fg: #000000;
+	--accent-color: #002F6C;
+	--border-tab-color: #b1b3b3;
+	--tab-hover: rgba(0,0,0,0.7);
+	--tab-color: rgba(0,0,0,0.1);
+	--tab-color-default: rgba(0,0,0,0.55);
+
+	@media (prefers-color-scheme: dark) {
+		--bg: #000000;
+		--fg: #ffffff;
+		--accent-color: #002F6C;
+		--border-tab-color: #b1b3b3;
+		--tab-hover: rgba(255,255,255,0.7);
+		--tab-color: rgba(255,255,255,0.1);
+		--tab-color-default: rgba(255,255,255,0.55);
+	}
+}
+
+
 * {
    font-family: NType82Mono-Regular;
+   color: var(--fg);
+   background: var(--bg);
 }
 
 h1 {
@@ -29,7 +52,7 @@ h1 {
 table, th, td {
   border-style: dotted;
   border-width: 2px;
-  border-color: #000;  
+  border-color: var(--fg);  
   border-collapse: collapse;
 }
 
@@ -47,8 +70,8 @@ a:not(.button)
 	text-decoration: none;
 	border-bottom-style: dotted;
 	border-width: 2px;
-	border-color: #002F6C;
-	color: #002F6C;
+	border-color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 .button {
@@ -60,9 +83,9 @@ a:not(.button)
     justify-content: center;
     align-items: center;
     width: 100px;
-    color: #fff;
-    background-color: #002F6C;
-    border-color: #002F6C;
+    color: var(--bg);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 	cursor: pointer;
     padding: 0.75rem 1.25rem;
 	text-transform: uppercase;
@@ -78,7 +101,7 @@ a:not(.button)
 .tabs {
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px solid #b1b3b3;
+  border-top: 1px solid var(--border-tab-color);
   width: 100%;
   position: absolute;
   left: 0;
@@ -102,15 +125,15 @@ a:not(.button)
 .tabs > label {
   padding: 0em 1em;
   padding-top: 0.5em;
-  background: #fff;
-  color: rgba(0,0,0,0.55);
+  background: var(--bg);
+  color: var(--tab-color-default);
   cursor: pointer;
   transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out;
   font-family: NType82Mono-Regular; 
 }
 
 .tabs > label:hover {
-  color: rgba(0,0,0,0.7);
+  color: var(--tab-hover);
   transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out;
 }
 
@@ -123,8 +146,8 @@ a:not(.button)
 }
 
 .tabs > input[type=radio]:checked + label {
-  background: #fff;
-  color: rgba(0,0,0,1);
+  background: var(--bg);
+  color: va(--tab-color);
 } 
 
 .tabs > input[type=radio]:checked + label svg {
@@ -138,7 +161,7 @@ a:not(.button)
 .tabs section  {
   padding: 1em;
   padding-left: 3rem;
-  border-top: 1px solid #b1b3b3;
+  border-top: 1px solid var(--border-tab-color);
 }
 
 body {
@@ -150,11 +173,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fff; 
+  background: var(--bg); 
   border-style: dotted;
   border-width: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(0,0,0,0.1); 
+  background: var(--tab-color);
 }
