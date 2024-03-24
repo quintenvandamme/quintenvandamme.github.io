@@ -26,7 +26,8 @@
 	--tab-hover: rgba(0,0,0,0.7);
 	--tab-color: rgba(0,0,0,0.1);
 	--tab-color-default: rgba(0,0,0,0.55);
-
+	--button-color: var(--bg);
+	
 	@media (prefers-color-scheme: dark) {
 		--bg: #000000;
 		--fg: #ffffff;
@@ -35,6 +36,7 @@
 		--tab-hover: rgba(255,255,255,0.7);
 		--tab-color: rgba(255,255,255,0.1);
 		--tab-color-default: rgba(255,255,255,0.55);
+		--button-color: var(--fg);
 	}
 }
 
@@ -83,7 +85,7 @@ a:not(.button)
     justify-content: center;
     align-items: center;
     width: 100px;
-    color: var(--bg);
+    color: var(--button-color);
     background-color: var(--accent-color);
     border-color: var(--accent-color);
 	cursor: pointer;
