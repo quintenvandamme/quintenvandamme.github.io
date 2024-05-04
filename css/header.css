@@ -17,14 +17,17 @@
 }
     
 header #logo {
-	font-family: "Micro 5", sans-serif;
-	font-size: 3rem;
+    font-family: "Micro 5", sans-serif;
+    font-size: 3rem;
     position: fixed;
-	margin: 0;
-    left: 3rem;
-    top: calc(40px - 1.5rem);
+    margin: 0;
+    top: calc(35px - 1.5rem);
     z-index: 4;
     color: #fff;
+    backdrop-filter: blur(10px);
+    left: 3rem;
+    padding: 5px;
+    border-radius: 1rem;
 }
 
 .blue {
