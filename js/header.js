@@ -1,25 +1,74 @@
-  function addSquaresToHeader() {
-    const header = document.getElementById('heatmap');
-    const intensityThreshold = 0.3; // Set the desired threshold for intensity
+// initialize the canvas
+const header = document.getElementById("header");
+var ctx = header.getContext("2d");
 
-    // Remove existing squares
-    while (header.firstChild) {
-      header.removeChild(header.firstChild);
-    }
+// Set the width and height of the canvas
+const width = window.innerWidth;
+const height = 80;
+header.width = width;
+header.height = height;
 
-    // Add new squares
-    for (let i = 0; i < 1200; i++) { // Adjust the number of squares as needed
-      const intensity = Math.random() * (1 - intensityThreshold) + intensityThreshold;
-      const square = document.createElement('div');
-      square.classList.add('blue');
-      square.setAttribute('data-intensity', intensity);
-      square.style.setProperty('--intensity', intensity);
-      header.appendChild(square);
+// width and height of each pixel
+const pixel = 20;
+
+// update time in milliseconds
+const time = 1000;
+
+// color
+const r = 3;
+const g = 5;
+const b = 72;
+const intensityThreshold = 0.3;
+
+// font
+const fontSize = 50;
+
+function getColor() {
+  const intensity =
+    Math.random() * (1 - intensityThreshold) + intensityThreshold;
+
+  const red = 255 - (255 - r) * intensity;
+  const green = 255 - (255 - g) * intensity;
+  const blue = 255 - (255 - b) * intensity;
+  return `rgb(${red}, ${green}, ${blue})`;
+}
+
+function draw() {
+  // Calculate the amount of pixels that fit in the width and height
+  let amountPixelWidth = header.width / pixel;
+  if (amountPixelWidth % 1 !== 0) {
+    amountPixelWidth = Math.floor(amountPixelWidth);
+  }
+
+  let amountPixelHeight = header.height / pixel;
+  if (amountPixelHeight % 1 !== 0) {
+    amountPixelHeight = Math.floor(amountPixelHeight);
+  }
+
+  // Draw the grid
+  for (let i = 0; i < amountPixelWidth; i++) {
+    for (let j = 0; j < amountPixelHeight; j++) {
+      // generate random color
+      const color = getColor();
+      ctx.fillStyle = color;
+      ctx.fillRect(i * pixel, j * pixel, pixel, pixel);
     }
   }
 
-  // Execute the function every second
-  setInterval(addSquaresToHeader, 1000);
+  // draw the text
+  ctx.font = fontSize + 'px "micro 5"';
+  ctx.fillStyle = "white";
+  ctx.fillText("Quinten Van Damme", 60, height - 5 - fontSize / 2);
+}
 
-  // Initial execution
-  addSquaresToHeader();
+function clear() {
+  ctx.clearRect(0, 0, header.width, header.height);
+}
+
+function update() {
+  clear();
+  draw();
+}
+
+update();
+setInterval(update, time);
