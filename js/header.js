@@ -23,6 +23,10 @@ const intensityThreshold = 0.3;
 // font
 const fontSize = 50;
 
+function resize() {
+  header.width = window.innerWidth;
+}
+
 function getColor() {
   const intensity =
     Math.random() * (1 - intensityThreshold) + intensityThreshold;
@@ -37,12 +41,12 @@ function draw() {
   // Calculate the amount of pixels that fit in the width and height
   let amountPixelWidth = header.width / pixel;
   if (amountPixelWidth % 1 !== 0) {
-    amountPixelWidth = Math.floor(amountPixelWidth);
+    amountPixelWidth += 1;
   }
 
   let amountPixelHeight = header.height / pixel;
   if (amountPixelHeight % 1 !== 0) {
-    amountPixelHeight = Math.floor(amountPixelHeight);
+    amountPixelHeight += 1;
   }
 
   // Draw the grid
@@ -67,6 +71,7 @@ function clear() {
 
 function update() {
   clear();
+  window.addEventListener("resize", resize);
   draw();
 }
 
