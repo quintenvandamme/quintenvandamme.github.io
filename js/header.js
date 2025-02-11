@@ -15,9 +15,9 @@ const pixel = 20;
 const time = 1000;
 
 // color
-const r = 3;
-const g = 5;
-const b = 72;
+let r = 3;
+let g = 5;
+let b = 72;
 const intensityThreshold = 0.3;
 
 // font
@@ -31,10 +31,16 @@ function getColor() {
   const intensity =
     Math.random() * (1 - intensityThreshold) + intensityThreshold;
 
-  const red = 255 - (255 - r) * intensity;
-  const green = 255 - (255 - g) * intensity;
-  const blue = 255 - (255 - b) * intensity;
+  let red = 255 - (255 - r) * intensity;
+  let green = 255 - (255 - g) * intensity;
+  let blue = 255 - (255 - b) * intensity;
   return `rgb(${red}, ${green}, ${blue})`;
+}
+
+function setRandomColor() {
+  r = Math.random() * 255;
+  g = Math.random() * 255;
+  b = Math.random() * 255;
 }
 
 function draw() {
@@ -75,5 +81,6 @@ function update() {
   draw();
 }
 
+setRandomColor();
 update();
 setInterval(update, time);
